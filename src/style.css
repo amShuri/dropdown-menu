@@ -33,13 +33,13 @@ nav {
 
 footer {
   bottom: 0;
+  color: #ccc;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
 }
 
 footer a {
-  color: var(--dark-clr);
   font-size: 0.95em;
   text-decoration: underline;
 }
