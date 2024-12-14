@@ -60,6 +60,7 @@ footer span {
 }
 
 .dropdown-menu {
+  display: none;
   margin-top: 20px;
   position: absolute;
   width: 100%;
@@ -85,4 +86,9 @@ footer span {
 
 .dropdown-toggle:hover {
   background-color: var(--hover-clr);
+}
+
+/* || UTILITIES */
+.visible {
+  display: block;
 }
