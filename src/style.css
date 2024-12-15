@@ -28,7 +28,10 @@ ul {
 
 nav {
   background-color: var(--dark-clr);
-  padding: 1em;
+  padding: 0.75em;
+
+  display: flex;
+  gap: 0.5em;
 }
 
 footer {
@@ -51,17 +54,12 @@ footer span {
 }
 
 .dropdown-container {
-  display: flex;
-  gap: 0.5em;
-}
-
-.dropdown-container > div {
   position: relative;
 }
 
 .dropdown-menu {
   display: none;
-  margin-top: 20px;
+  margin-top: 15px;
   position: absolute;
   width: 100%;
 }

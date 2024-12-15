@@ -15,17 +15,18 @@ function toggleDropdownVisibility(dropdownId) {
   }
 }
 
-function handleDropdownClick(e) {
-  const dropdownToggle = e.target.closest('.dropdown-toggle');
-  if (!dropdownToggle) return;
+class Dropdown {
+  constructor(toggleSelector) {
+    this.toggleSelector = toggleSelector;
+    this.setupEvents();
+  }
 
-  toggleDropdownVisibility(dropdownToggle.getAttribute('data-target'));
+  setupEvents() {
+    this.toggleSelector.addEventListener('click', (e) => {
+      toggleDropdownVisibility(e.target.getAttribute('data-target'));
+    });
+  }
 }
 
-function initialize(element) {
-  document
-    .querySelector(element)
-    .addEventListener('click', handleDropdownClick);
-}
-
-initialize('nav');
+new Dropdown(document.querySelector('[data-target="dropdown"]'));
+new Dropdown(document.querySelector('[data-target="new-dropdown"]'));
