@@ -1,5 +1,3 @@
-import './style.css';
-
 function toggleDropdownVisibility(dropdownId) {
   const visibleDropdown = document.querySelector('.visible');
   const clickedDropdown = document.getElementById(dropdownId);
@@ -15,7 +13,7 @@ function toggleDropdownVisibility(dropdownId) {
   }
 }
 
-class Dropdown {
+export class Dropdown {
   constructor(toggleSelector) {
     this.toggleSelector = toggleSelector;
     this.setupEvents();
@@ -27,6 +25,3 @@ class Dropdown {
     });
   }
 }
-
-new Dropdown(document.querySelector('[data-target="dropdown"]'));
-new Dropdown(document.querySelector('[data-target="new-dropdown"]'));

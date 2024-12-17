@@ -1,14 +1,14 @@
 {
-  "name": "dropdown-menu",
+  "name": "asri-dropdown-menu",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Dropdown menu based on TOP's assignment",
+  "main": "dist/main.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --open --config webpack.dev.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "amShuri",
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.16.0",
