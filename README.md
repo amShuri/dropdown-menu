@@ -1,12 +1,16 @@
 # Dropdown Menu
 
-## Install
+## Installation
 
 ```
-npm install asri-dropdown-menu
+npm install ashi-dropdown-menu
 ```
+
+---
 
 ## Example
+
+#### HTML
 
 Use the following HTML structure when implementing the dropdown:
 
@@ -20,7 +24,9 @@ Use the following HTML structure when implementing the dropdown:
 </div>
 ```
 
-Add the following styles to your CSS file:
+#### CSS
+
+Include these styles to control the dropdown's visibility:
 
 ```css
 .dropdown-menu {
@@ -32,7 +38,15 @@ Add the following styles to your CSS file:
 }
 ```
 
-Then, initialize the dropdown with JavaScript:
+#### JavaScript
+
+If you're using a bundler like Webpack, import the library as follows:
+
+```js
+import { Dropdown } from 'ashi-dropdown-menu';
+```
+
+Then, initialize the dropdown by creating a new instance of the Dropdown class:
 
 ```js
 new Dropdown(document.querySelector("[data-target='dropdown']"));
@@ -44,7 +58,10 @@ new Dropdown(document.querySelector("[data-target='dropdown']"));
 
 ##### `new Dropdown(triggerElement)`
 
-Creates a new dropdown-menu instance.
+#### Parameters
 
-- triggerElement (required): The element that triggers the dropdown-menu when
-  clicked.
+- `triggerElement` (HTML Element): A reference to the clickable element (e.g., the `<a>` tag) that triggers the dropdown.
+
+#### Behavior
+
+- When the `triggerElement` is clicked, the associated dropdown menu toggles its visibility by adding or removing the `visible` class.
