@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Dropdown menu based on TOP's assignment",
   "main": "dist/main.js",
+  "files": [
+    "dist/main.js"
+  ],
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --open --config webpack.dev.js"
